@@ -16,7 +16,7 @@ else
     exit 1
 end
 
-mc = rpcclient("shellcmd")
+mc = rpcclient("shellcmd", :options => options)
 
 mc.runcmd(:cmd => command) do |resp|
     printf("%s exitcode: %d, output:\n", resp[:senderid], resp[:body][:data][:exitcode])
