@@ -1,0 +1,28 @@
+#!/usr/bin/ruby
+ 
+require 'mcollective'
+  
+include MCollective::RPC
+ 
+options = rpcoptions do |parser, options|
+   parser.define_head "run remote shell command"
+   parser.banner = "Usage: mc-shellcmd  [command]"
+end
+
+if ARGV.length == 1
+    command = ARGV.shift
+else
+    puts("Please specify a command")
+    exit 1
+end
+
+mc = rpcclient("shellcmd")
+
+mc.runcmd(:cmd => command) do |resp|
+    printf("%s exitcode: %d, output:\n", resp[:senderid], resp[:body][:data][:exitcode])
+    puts resp[:body][:data][:output]
+    puts "===============================================================\n"
+end
+
+printrpcstats
+
