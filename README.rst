@@ -44,7 +44,7 @@ Install
 TODO
 ====
 
-A lot of things.  See the Issues page on github for more
+See the Issues page on github for more: http://github.com/joemiller/shellcmd-agent/issues
 
 Author
 ======
