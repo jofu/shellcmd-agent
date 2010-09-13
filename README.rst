@@ -10,7 +10,7 @@ commands on your mcollective machines.
 
 
 Install
-=====================================================
+=======
 
 - Grab it from github::
 
@@ -29,7 +29,7 @@ Install
     web01.dom.com exitcode: 0, output:
     I execute therefore I am
     ===============================================================
-    web02.dom.com output:
+    web02.dom.com exitcode: 0, output:
     I execute therefore I am
     ===============================================================
     web03.dom.com exitcode: 0, output:
@@ -42,11 +42,11 @@ Install
     Finished processing 4 / 4 hosts in 221.02 ms
 
 TODO
-===================================================
+====
 
 A lot of things.  See the Issues page on github for more
 
 Author
-===================================================
+======
 
 Joe Miller, <joeym@joeym.net>, 9/13/2010
