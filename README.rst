@@ -16,10 +16,10 @@ Install
 
     git clone git://github.com/joemiller/shellcmd-agent.git
 
-- Copy shellcmd.rb to the mcollective agent directory on all 
+- Copy ``shellcmd.rb`` to the mcollective agent directory on all 
   of your mcollective-managed machines.
 
-- On your client machine, install the mc-shellcmd control script
+- On your client machine, install the ``mc-shellcmd`` control script
 
 - Test it::
 
